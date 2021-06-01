@@ -1,0 +1,14 @@
+main {
+  display: flex;
+  margin: 7%;
+  margin-left: 20%;
+}
+
+.home {
+  font-weight: 700;
+}
+
+#home-image {
+  width: 30%;
+  margin-left: 10%;
+}
