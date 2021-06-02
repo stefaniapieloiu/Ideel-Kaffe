@@ -1,0 +1,14 @@
+#shopheader {
+  text-align: center;
+}
+
+#shopheader h1 {
+  font-size: 2rem;
+}
+
+#product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
