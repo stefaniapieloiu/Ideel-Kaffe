@@ -5,7 +5,7 @@ fetch("https://kea2sem-4cc6.restdb.io/rest/ideelkaffe", {
   },
 })
   .then((res) => res.json())
-  .then((Response) => {
+  .then((response) => {
     showProducts(response);
   })
   .catch((err) => {
