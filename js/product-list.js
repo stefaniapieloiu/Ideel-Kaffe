@@ -6,20 +6,18 @@ fetch("https://kea2sem-4cc6.restdb.io/rest/ideelkaffe", {
 })
   .then((res) => res.json())
   .then((response) => {
-    showProducts(response);
+    showProduct(response);
   })
   .catch((err) => {
     console.error(err);
   });
-function showProducts(products) {
+function showProduct(product) {
   console.log(product);
   //data.comments
   //grab the template
-  const template = document.querySelector(
-    ".single-product-template"
-  ).textContent;
+  const template = document.querySelector(".single-product-template").content;
   //loop through data.comments
-  products.forEach((product) => {
+  product.forEach((product) => {
     console.log(product);
     const copy = template.cloneNode(true);
     copy.querySelector("img").src = `${product.image}`;
