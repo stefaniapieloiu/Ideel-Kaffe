@@ -1,7 +1,7 @@
 fetch("https://kea2sem-4cc6.restdb.io/rest/ideelkaffe", {
   method: "GET",
   headers: {
-    "x-apikey": "aa88560dbdacc9fe1483666ecbb92483ec1f5",
+    "x-apikey": "60b8c65d318a330b62f58a37",
   },
 })
   .then((res) => res.json())
