@@ -9,12 +9,12 @@ fetch("https://kea2sem-4cc6.restdb.io/rest/ideelkaffe" + id, {
 })
   .then((res) => res.json())
   .then((response) => {
-    showProducts(response);
+    showProduct(response);
   })
   .catch((err) => {
     console.error(err);
   });
-function showProducts(product) {
+function showProduct(product) {
   console.log(product);
   document.querySelector(".product-img").src = `${product.image}`;
   document.querySelector(".name").textContent = product.name;
