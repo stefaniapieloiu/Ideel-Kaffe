@@ -1,9 +1,10 @@
 #shopheader {
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 #shopheader h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 #product-list {
@@ -11,18 +12,19 @@
   flex-direction: row;
   flex-wrap: wrap;
   row-gap: 3rem;
+  column-gap: 4rem;
   justify-content: space-around;
   margin-left: 10rem;
-  margin-right: 10rem;
+  margin-right: 7rem;
   margin-bottom: 5rem;
 }
 
 #product-list a {
-  width: 30%;
+  width: 40%;
 }
 
 article img {
-  width: 80%;
+  width: 100%;
 }
 
 .single-product {
@@ -30,7 +32,6 @@ article img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
 }
 
 .info {
