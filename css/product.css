@@ -2,22 +2,25 @@
 :root {
   --primary-font: "Raleway", sans-serif;
 }
+main {
+  margin: 2rem;
+}
 
 #product {
   display: flex;
   flex-direction: row;
-  column-gap: 4rem;
   justify-content: space-between;
-  row-gap: 3rem;
+  margin-left: 2rem;
 }
 
 .product-img {
-  height: 30rem;
+  height: 20rem;
 }
 
 .info {
   width: 50%;
-  padding: 3rem;
+  padding: 1rem;
+  padding-right: 5rem;
   display: flex;
   flex-direction: column;
 }
