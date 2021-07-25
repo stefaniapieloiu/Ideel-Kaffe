@@ -7,31 +7,41 @@
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/beauty.css" />
     <title>Ideel Kaffe</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
   </head>
+
   <body>
     <header>
       <nav>
-        <img id="logo" src="images/ideel_logo.png" alt="logo" />
-        <ul>
+        <div class="nav-header">
+         <a href="index.html"><img id="logo" src="images/ideel_logo.png" alt="logo" /></a> 
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="links">
           <li class="home">
             <a href="index.html">Home</a>
           </li>
           <li class="shop">
-            <a href="product-list.html">Shop</a>
+            <a href="product-list.html" target=”_blank”>Shop</a>
           </li>
           <li class="blog">
-            <a href="https://www.ideel-kaffe.dk/blog">Blog</a>
+            <a href="https://www.ideel-kaffe.dk/blog" target=”_blank”>Blog</a>
           </li>
           <li class="about">
             <div class="drp-block">
-              <a href="#">About</a>
+              <a href="#" target=”_blank”>About</a>
               <div class="drp-content">
-                <a class="drp-single" href="https://www.ideel-kaffe.dk/en/about"
+                <a class="drp-single" href="https://www.ideel-kaffe.dk/en/about" target=”_blank”
                   >Us</a
                 >
                 <a
                   class="drp-single"
-                  href="https://www.ideel-kaffe.dk/en/coffee"
+                  href="https://www.ideel-kaffe.dk/en/coffee" target=”_blank”
                   >Our Coffee</a
                 >
                 <a
@@ -42,14 +52,18 @@
               </div>
             </div>
           </li>
+
           <li class="icon" id="cart">
             <img src="images/Shopping.svg" alt="cart-icon" />
           </li>
+          <!-- </div> -->
         </ul>
       </nav>
     </header>
     <main>
-      <div id="">
+      <div id="" class="main_ph">
+        <div class="main_ph_info">
+        <div class="paragraph"></div>
         <h1 class="">Sustainability in a Cup</h1>
         <p class="">
           Ethiopian specialty coffee in <br />
@@ -59,10 +73,14 @@
           ><button class="button">Shop Coffee</button></a
         >
       </div>
-      <img id="home-image" src="images/casules_cup.png" alt="" />
+      </div>
+
+        <img id="home-image" src="images/casules_cup.png" alt="" />
       </div>
     </main>
-    <footer>
+    <footer class="footer">
+      <div class="all_footer_elements">
+      <div class="footer_v2">
       <div class="footer-sec" id="newsletter-div">
         <form id="signup">
           <label for="email">
@@ -71,7 +89,55 @@
           >
           <input id="email" placeholder="Your email" />
         </form>
-        <h4>2021 Ideel Coffee ApS. All Rights Reserved.</h4>
+      </div>
+      <div class="footer-sec" id="socialmedia">
+        <h2>Follow Us</h2>
+        <div id="icons">
+          <a href="https://www.instagram.com/ideel_kaffe/" target=”_blank”><img src="images/instagram.svg" class="icon" alt="instagram" /></a>
+          <a href="https://www.facebook.com/ideelkaffe" target=”_blank”><img src="images/facebook.svg" class="icon" alt="facebook" /></a>
+          <a href="https://ideel-kaffe.dk/about/" target=”_blank”><img src="images/email.svg" class="icon" alt="email" /></a>
+        </div>
+      </div>
+      <div class="footer-sec" id="important-info">
+        <div id="links">
+          <div id="links-left">
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Sustainability</a></li>
+            </ul>
+            <div class="companies_logo-v1">
+            <img src="images/nova_award.png" class="award" alt="nova award" />
+            <img
+              src="images/okcompost_award.png"
+              class="award"
+              alt="okcompost award"
+            />
+          </div>
+          </div>
+          <div id="links-right">
+            <ul>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Returns & Exchanges</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+            <img
+              src="images/startup_award.png"
+              class="award"
+              alt="startup award"
+            />
+            <img
+              src="images/ps_sustainablity_award.png"
+              class="award"
+              alt="sustainablity award"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+       <div class="newsletter-div_right"> 
+         <h4>2021 Ideel Coffee ApS. All Rights Reserved.</h4>
         <ul>
           <li>
             <a href="#">Privacy policy</a>
@@ -87,36 +153,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer-sec" id="socialmedia">
-        <h2>Follow Us</h2>
-        <div id="icons">
-          <img src="images/instagram.svg" class="icon" alt="instagram" />
-          <img src="images/facebook.svg" class="icon" alt="facebook" />
-          <img src="images/email.svg" class="icon" alt="email" />
-        </div>
-      </div>
-      <div class="footer-sec" id="important-info">
-        <div id="links">
-          <div id="links-left">
-            <ul>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">Sustainability</a></li>
-            </ul>
-            <img src="images/nova_award.png" class="award" />
-            <img src="images/okcompost_award.png" class="award" />
-          </div>
-          <div id="links-right">
-            <ul>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Returns & Exchanges</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-            <img src="images/startup_award.png" class="award" />
-            <img src="images/ps_sustainablity_award.png" class="award" />
-          </div>
-        </div>
-      </div>
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>
